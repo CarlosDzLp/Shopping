@@ -76,10 +76,14 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="Entitlements.plist" />
-    <BundleResource Include="error.json" />
-    <BundleResource Include="info.json" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <BundleResource Include="Resources\info.json" />
+    <BundleResource Include="Resources\not_found.json" />
+    <BundleResource Include="Resources\success.json" />
+    <BundleResource Include="Resources\error.json" />
+    <BundleResource Include="error.json" />
+    <BundleResource Include="info.json" />
     <BundleResource Include="not_found.json" />
     <BundleResource Include="success.json" />
   </ItemGroup>
@@ -155,7 +159,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\ShoppingApp\ShoppingApp.csproj">
-      <Project>{4190E755-240A-4B96-BF15-4AE0185C79AA}</Project>
+      <Project>{A4432439-FA92-4A2A-AAA6-DD7AA3E28F60}</Project>
       <Name>ShoppingApp</Name>
     </ProjectReference>
   </ItemGroup>

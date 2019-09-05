@@ -13,7 +13,7 @@
 namespace ShoppingApp.Views.Session {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\Session\\LoginPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views/Session/LoginPage.xaml")]
     public partial class LoginPage : global::ShoppingApp.Controls.CustomContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

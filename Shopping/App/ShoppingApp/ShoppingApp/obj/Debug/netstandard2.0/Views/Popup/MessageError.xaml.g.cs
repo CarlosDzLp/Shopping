@@ -13,7 +13,7 @@
 namespace ShoppingApp.Views.Popup {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\Popup\\MessageError.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views/Popup/MessageError.xaml")]
     public partial class MessageError : global::Rg.Plugins.Popup.Pages.PopupPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

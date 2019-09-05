@@ -1,32 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LVLA\\Documents\\GitHub\\Shopping\\Shopping\\App\\ShoppingApp\\ShoppingApp\\ShoppingApp.csproj": {}
+    "/Users/carlosdiaz/Shopping/Shopping/App/ShoppingApp/ShoppingApp/ShoppingApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LVLA\\Documents\\GitHub\\Shopping\\Shopping\\App\\ShoppingApp\\ShoppingApp\\ShoppingApp.csproj": {
+    "/Users/carlosdiaz/Shopping/Shopping/App/ShoppingApp/ShoppingApp/ShoppingApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LVLA\\Documents\\GitHub\\Shopping\\Shopping\\App\\ShoppingApp\\ShoppingApp\\ShoppingApp.csproj",
+        "projectUniqueName": "/Users/carlosdiaz/Shopping/Shopping/App/ShoppingApp/ShoppingApp/ShoppingApp.csproj",
         "projectName": "ShoppingApp",
-        "projectPath": "C:\\Users\\LVLA\\Documents\\GitHub\\Shopping\\Shopping\\App\\ShoppingApp\\ShoppingApp\\ShoppingApp.csproj",
-        "packagesPath": "C:\\Users\\LVLA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LVLA\\Documents\\GitHub\\Shopping\\Shopping\\App\\ShoppingApp\\ShoppingApp\\obj\\",
+        "projectPath": "/Users/carlosdiaz/Shopping/Shopping/App/ShoppingApp/ShoppingApp/ShoppingApp.csproj",
+        "packagesPath": "/Users/carlosdiaz/.nuget/packages/",
+        "outputPath": "/Users/carlosdiaz/Shopping/Shopping/App/ShoppingApp/ShoppingApp/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\LVLA\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/carlosdiaz/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -84,7 +80,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100-preview8-013656\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100-preview8-013656/RuntimeIdentifierGraph.json"
         }
       }
     }

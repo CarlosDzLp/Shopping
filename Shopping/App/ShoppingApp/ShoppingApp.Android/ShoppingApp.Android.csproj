@@ -15,7 +15,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -117,7 +116,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ShoppingApp\ShoppingApp.csproj">
-      <Project>{4190E755-240A-4B96-BF15-4AE0185C79AA}</Project>
+      <Project>{A4432439-FA92-4A2A-AAA6-DD7AA3E28F60}</Project>
       <Name>ShoppingApp</Name>
     </ProjectReference>
   </ItemGroup>

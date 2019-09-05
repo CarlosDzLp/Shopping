@@ -121,7 +121,7 @@
     "DLToolkit.Forms.Controls.FlowListView/2.0.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-zoXUKFvB+M3XIMrmSWBIb3Wu3zKR7a/moQAuCpJ2bKbDcff1B6/D3MNAnhEoFyWf+EQ9QGrok3y8jrvNnp1VdA==",
+      "sha512": "sha512-n/TIbW3a7q/h5wA5vt8VfkN3eecJN8nMlPVu3NS7hvFODg0YqFHXDgbX1O/a9agcuk5Km6DZqJqpxpcYRS9sOQ==",
       "path": "dltoolkit.forms.controls.flowlistview/2.0.11",
       "hashPath": "dltoolkit.forms.controls.flowlistview.2.0.11.nupkg.sha512"
     },
