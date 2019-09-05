@@ -13,11 +13,11 @@ using System.Web.Http.ModelBinding;
 namespace Shopping.Controllers
 {
     [AllowAnonymous]
-    [RoutePrefix("api/Authenticate")]
+    [RoutePrefix("api/authenticate")]
     public class AuthenticateController : ApiController
     {
         [HttpPost]
-        [Route("Aouth")]
+        [Route("aouth")]
         public IHttpActionResult Authenticate([FromBody]AuthenticateViewModel auth)
         {
             if (auth == null)

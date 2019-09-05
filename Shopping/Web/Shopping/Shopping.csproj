@@ -177,7 +177,9 @@
     <Compile Include="BussinesLayer\BLCategory.cs" />
     <Compile Include="BussinesLayer\BLUser.cs" />
     <Compile Include="Controllers\AuthenticateController.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\ShoppingModel.cs" />
