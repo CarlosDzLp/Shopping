@@ -40,5 +40,32 @@
       </ResultMapping>
     </FunctionImportMapping>
     <FunctionImportMapping FunctionImportName="spUpdUser" FunctionName="ShoppingModel.Store.spUpdUser" />
+    <FunctionImportMapping FunctionImportName="spDelCategory" FunctionName="ShoppingModel.Store.spDelCategory" />
+    <FunctionImportMapping FunctionImportName="spInsCategory" FunctionName="ShoppingModel.Store.spInsCategory" />
+    <FunctionImportMapping FunctionImportName="spSelAllCategory" FunctionName="ShoppingModel.Store.spSelAllCategory">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ShoppingModel.spSelAllCategory_Result">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="CategoryDescription" ColumnName="CategoryDescription" />
+          <ScalarProperty Name="CategoryImage" ColumnName="CategoryImage" />
+          <ScalarProperty Name="CategoryDateCreated" ColumnName="CategoryDateCreated" />
+          <ScalarProperty Name="CategoryDatemodified" ColumnName="CategoryDatemodified" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spSelCategoryXID" FunctionName="ShoppingModel.Store.spSelCategoryXID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ShoppingModel.spSelCategoryXID_Result">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="CategoryDescription" ColumnName="CategoryDescription" />
+          <ScalarProperty Name="CategoryImage" ColumnName="CategoryImage" />
+          <ScalarProperty Name="CategoryDateCreated" ColumnName="CategoryDateCreated" />
+          <ScalarProperty Name="CategoryDatemodified" ColumnName="CategoryDatemodified" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spUpdCategory" FunctionName="ShoppingModel.Store.spUpdCategory" />
   </EntityContainerMapping>
 </Mapping>

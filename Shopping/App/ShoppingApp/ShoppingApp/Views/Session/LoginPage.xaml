@@ -29,6 +29,7 @@
                     TextColor="Black" />
                 <Button
                     BackgroundColor="Black"
+                    Clicked="Button_Clicked"
                     CornerRadius="0"
                     Text="Iniciar Sesion"
                     TextColor="White" />

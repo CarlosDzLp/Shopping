@@ -38,6 +38,25 @@
       <Parameter Name="UserType" Mode="In" Type="Int32" />
       <Parameter Name="UserActive" Mode="In" Type="Boolean" />
     </FunctionImport>
+    <FunctionImport Name="spDelCategory">
+      <Parameter Name="CategoryID" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="spInsCategory">
+      <Parameter Name="CategoryName" Mode="In" Type="String" />
+      <Parameter Name="CategoryDescription" Mode="In" Type="String" />
+      <Parameter Name="CategoryImage" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="spSelAllCategory" ReturnType="Collection(ShoppingModel.spSelAllCategory_Result)" />
+    <FunctionImport Name="spSelCategoryXID" ReturnType="Collection(ShoppingModel.spSelCategoryXID_Result)">
+      <Parameter Name="CategoryID" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="spUpdCategory">
+      <Parameter Name="CategoryID" Mode="In" Type="Guid" />
+      <Parameter Name="CategoryName" Mode="In" Type="String" />
+      <Parameter Name="CategoryDescription" Mode="In" Type="String" />
+      <Parameter Name="CategoryImage" Mode="In" Type="Binary" />
+      <Parameter Name="CategoryDateCreated" Mode="In" Type="DateTime" />
+    </FunctionImport>
   </EntityContainer>
   <ComplexType Name="spSelUser_Result">
     <Property Type="Guid" Name="UserID" Nullable="false" />
@@ -66,5 +85,21 @@
     <Property Type="Binary" Name="UserImage" Nullable="true" MaxLength="Max" />
     <Property Type="Int32" Name="UserType" Nullable="false" />
     <Property Type="Boolean" Name="UserActive" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="spSelAllCategory_Result">
+    <Property Type="Guid" Name="CategoryID" Nullable="false" />
+    <Property Type="String" Name="CategoryName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="CategoryDescription" Nullable="false" MaxLength="100" />
+    <Property Type="Binary" Name="CategoryImage" Nullable="true" MaxLength="Max" />
+    <Property Type="DateTime" Name="CategoryDateCreated" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="CategoryDatemodified" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="spSelCategoryXID_Result">
+    <Property Type="Guid" Name="CategoryID" Nullable="false" />
+    <Property Type="String" Name="CategoryName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="CategoryDescription" Nullable="false" MaxLength="100" />
+    <Property Type="Binary" Name="CategoryImage" Nullable="true" MaxLength="Max" />
+    <Property Type="DateTime" Name="CategoryDateCreated" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="CategoryDatemodified" Nullable="true" Precision="23" />
   </ComplexType>
 </Schema>

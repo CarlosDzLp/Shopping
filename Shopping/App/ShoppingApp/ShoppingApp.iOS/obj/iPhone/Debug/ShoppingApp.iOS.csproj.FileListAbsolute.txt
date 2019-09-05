@@ -1,5 +1,9 @@
 C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp.iOS\bin\iPhone\Debug\ShoppingApp.iOS.exe
 C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp.iOS\bin\iPhone\Debug\ShoppingApp.iOS.pdb
+C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp.iOS\bin\iPhone\Debug\BTProgressHUD.dll
+C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp.iOS\bin\iPhone\Debug\Lottie.iOS.dll
+C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp.iOS\bin\iPhone\Debug\Lottie.Forms.dll
+C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp.iOS\bin\iPhone\Debug\Lottie.Forms.pdb
 C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp.iOS\bin\iPhone\Debug\DLToolkit.Forms.Controls.FlowListView.dll
 C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp.iOS\bin\iPhone\Debug\Newtonsoft.Json.dll
 C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp.iOS\bin\iPhone\Debug\Rg.Plugins.Popup.IOS.dll
@@ -87,6 +91,10 @@ C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp.iOS
 C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp.iOS\obj\iPhone\Debug\ShoppingApp.iOS.csproj.CopyComplete
 C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp.iOS\obj\iPhone\Debug\ShoppingApp.iOS.exe
 C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp.iOS\obj\iPhone\Debug\ShoppingApp.iOS.pdb
+C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp.iOS\obj\iPhone\Debug\CopyFilesToMac\BTProgressHUD.dll.ReferenceCopyLocalPaths.stamp
+C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp.iOS\obj\iPhone\Debug\CopyFilesToMac\Lottie.iOS.dll.ReferenceCopyLocalPaths.stamp
+C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp.iOS\obj\iPhone\Debug\CopyFilesToMac\Lottie.Forms.dll.ReferenceCopyLocalPaths.stamp
+C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp.iOS\obj\iPhone\Debug\CopyFilesToMac\Lottie.Forms.pdb.ReferenceCopyLocalPaths.stamp
 C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp.iOS\obj\iPhone\Debug\CopyFilesToMac\DLToolkit.Forms.Controls.FlowListView.dll.ReferenceCopyLocalPaths.stamp
 C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp.iOS\obj\iPhone\Debug\CopyFilesToMac\Newtonsoft.Json.dll.ReferenceCopyLocalPaths.stamp
 C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp.iOS\obj\iPhone\Debug\CopyFilesToMac\Rg.Plugins.Popup.IOS.dll.ReferenceCopyLocalPaths.stamp
@@ -112,6 +120,3 @@ C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp.iOS
 C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp.iOS\obj\iPhone\Debug\CopyFilesToMac\ShoppingApp.iOS.pdb.DebugSymbolsProjectOutputGroupOutput.stamp
 C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp.iOS\obj\iPhone\Debug\CopyFilesToMac\Entitlements.plist.NoneOutput.stamp
 C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp.iOS\obj\iPhone\Debug\CopyFilesToMac\Info.plist.NoneOutput.stamp
-C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp.iOS\bin\iPhone\Debug\ShoppingApp.dll.mdb
-C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp.iOS\bin\iPhone\Debug\BTProgressHUD.dll
-C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp.iOS\obj\iPhone\Debug\CopyFilesToMac\BTProgressHUD.dll.ReferenceCopyLocalPaths.stamp

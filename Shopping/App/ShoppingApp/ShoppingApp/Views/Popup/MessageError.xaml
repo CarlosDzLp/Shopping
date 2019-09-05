@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<pages:PopupPage
+    x:Class="ShoppingApp.Views.Popup.MessageError"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:ShoppingApp.Controls"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+    mc:Ignorable="d">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <controls:CanvasView
+            Padding="0,20,0,20"
+            BackgroundColor="White"
+            CornerRadius="0"
+            VerticalOptions="Center"
+            WidthRequest="300">
+            <StackLayout>
+                <forms:AnimationView
+                    Margin="0,0,0,20"
+                    Animation="error.json"
+                    AutoPlay="True"
+                    IsPlaying="True"
+                    Loop="false" />
+                <Label
+                    FontSize="20"
+                    HorizontalTextAlignment="Center"
+                    Text="Hola mexico" />
+            </StackLayout>
+        </controls:CanvasView>
+
+    </StackLayout>
+</pages:PopupPage>

@@ -98,7 +98,6 @@ C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\Web\Shopping\bin\es\System.Web.
 C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\Web\Shopping\bin\es\System.Web.WebPages.Deployment.resources.dll
 C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\Web\Shopping\bin\es\System.Web.WebPages.Razor.resources.dll
 C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\Web\Shopping\obj\Release\Shopping.csprojAssemblyReference.cache
-C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\Web\Shopping\obj\Release\Shopping.csproj.CoreCompileInputs.cache
 C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\Web\Shopping\obj\Release\Shopping.csproj.CopyComplete
 C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\Web\Shopping\obj\Release\Shopping.dll
 C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\Web\Shopping\obj\Release\Shopping.pdb

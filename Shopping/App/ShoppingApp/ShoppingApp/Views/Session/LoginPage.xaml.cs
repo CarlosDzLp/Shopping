@@ -1,4 +1,5 @@
-﻿using ShoppingApp.Controls;
+﻿using Rg.Plugins.Popup.Services;
+using ShoppingApp.Controls;
 using ShoppingApp.Helpers;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,11 @@ namespace ShoppingApp.Views.Session
         public LoginPage()
         {
             InitializeComponent();
+        }
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            await PopupNavigation.Instance.PushAsync(new Views.Popup.MessageSuccess());
         }
     }
 }

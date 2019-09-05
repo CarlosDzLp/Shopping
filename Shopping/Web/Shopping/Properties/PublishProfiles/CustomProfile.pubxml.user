@@ -271,10 +271,10 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
       <publishTime>05/24/2018 13:38:24</publishTime>
     </File>
     <File Include="bin/Shopping.dll">
-      <publishTime>09/02/2019 18:20:55</publishTime>
+      <publishTime>09/05/2019 09:52:05</publishTime>
     </File>
     <File Include="bin/Shopping.pdb">
-      <publishTime>09/02/2019 18:20:55</publishTime>
+      <publishTime>09/05/2019 09:52:05</publishTime>
     </File>
     <File Include="bin/System.IdentityModel.Tokens.Jwt.dll">
       <publishTime>06/24/2019 19:49:42</publishTime>
@@ -406,7 +406,7 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
       <publishTime>09/02/2019 16:29:17</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>09/02/2019 18:09:51</publishTime>
+      <publishTime>09/05/2019 09:52:09</publishTime>
     </File>
   </ItemGroup>
 </Project>

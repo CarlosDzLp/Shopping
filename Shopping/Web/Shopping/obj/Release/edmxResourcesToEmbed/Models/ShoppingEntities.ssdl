@@ -1,7 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="ShoppingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <Function Name="spDelCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CategoryID" Type="uniqueidentifier" Mode="In" />
+  </Function>
   <Function Name="spDelUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="UserID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="spInsCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CategoryName" Type="varchar" Mode="In" />
+    <Parameter Name="CategoryDescription" Type="varchar" Mode="In" />
+    <Parameter Name="CategoryImage" Type="image" Mode="In" />
   </Function>
   <Function Name="spInsUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="UserName" Type="varchar" Mode="In" />
@@ -16,12 +24,23 @@
     <Parameter Name="UserType" Type="int" Mode="In" />
     <Parameter Name="UserActive" Type="bit" Mode="In" />
   </Function>
+  <Function Name="spSelAllCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="spSelCategoryXID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CategoryID" Type="uniqueidentifier" Mode="In" />
+  </Function>
   <Function Name="spSelUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="UserEmail" Type="varchar(max)" Mode="In" />
     <Parameter Name="UserPassword" Type="varchar(max)" Mode="In" />
   </Function>
   <Function Name="spSelUserALL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="UserActive" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="spUpdCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CategoryID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="CategoryName" Type="varchar" Mode="In" />
+    <Parameter Name="CategoryDescription" Type="varchar" Mode="In" />
+    <Parameter Name="CategoryImage" Type="image" Mode="In" />
+    <Parameter Name="CategoryDateCreated" Type="datetime" Mode="In" />
   </Function>
   <Function Name="spUpdUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="UserID" Type="uniqueidentifier" Mode="In" />

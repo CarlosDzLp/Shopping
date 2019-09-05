@@ -64,11 +64,13 @@
     <AppExtensionDebugBundleId />
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Controls\CanvasViewRenderer.cs" />
     <Compile Include="Controls\ColorExtensions.cs" />
     <Compile Include="Controls\CustomSearchBar.cs" />
     <Compile Include="Controls\FloatingEntryRenderer.cs" />
     <Compile Include="Controls\FloatLabeledTextField.cs" />
     <Compile Include="Controls\FontExtensions.cs" />
+    <Compile Include="Controls\ShapeUtils.cs" />
     <Compile Include="Controls\StringExtensions.cs" />
     <Compile Include="Helper\ProgressDialogiOS.cs" />
     <Compile Include="Main.cs" />
