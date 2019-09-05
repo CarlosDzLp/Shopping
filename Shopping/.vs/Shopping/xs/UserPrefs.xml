@@ -11,9 +11,12 @@
               <Node name="ShoppingApp" expanded="True">
                 <Node name="Views" expanded="True">
                   <Node name="Templates" expanded="True">
-                    <Node name="ConnectionView.xaml" expanded="True" selected="True" />
+                    <Node name="ConnectionView.xaml" expanded="True" />
                   </Node>
                 </Node>
+              </Node>
+              <Node name="ShoppingApp.iOS" expanded="True">
+                <Node name="not_found.json" selected="True" />
               </Node>
             </Node>
           </Node>
