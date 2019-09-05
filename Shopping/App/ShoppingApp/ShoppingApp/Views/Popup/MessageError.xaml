@@ -11,24 +11,24 @@
     mc:Ignorable="d">
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
         <controls:CanvasView
-            Padding="0,20,0,20"
+            Padding="0,10,0,20"
             BackgroundColor="White"
             CornerRadius="0"
             VerticalOptions="Center"
-            WidthRequest="300">
+            WidthRequest="250">
             <StackLayout>
                 <forms:AnimationView
-                    Margin="0,0,0,20"
+                    Margin="0,0,0,0"
                     Animation="error.json"
                     AutoPlay="True"
+                    HeightRequest="100"
                     IsPlaying="True"
                     Loop="false" />
                 <Label
                     FontSize="20"
-                    HorizontalTextAlignment="Center"
-                    Text="Hola mexico" />
+                    x:Name="message"
+                    HorizontalTextAlignment="Center"/>
             </StackLayout>
         </controls:CanvasView>
-
     </StackLayout>
 </pages:PopupPage>

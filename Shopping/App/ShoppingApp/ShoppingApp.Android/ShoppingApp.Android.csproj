@@ -85,13 +85,14 @@
     <Compile Include="SplashActivity.cs" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\error.json" />
     <AndroidAsset Include="Assets\info.json" />
     <AndroidAsset Include="Assets\not_found.json" />
-    <AndroidAsset Include="Assets\success.json" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
+    <AndroidAsset Include="Assets\connection.json" />
+    <AndroidAsset Include="Assets\error.json" />
+    <AndroidAsset Include="Assets\success.json" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Tabbar.xml" />

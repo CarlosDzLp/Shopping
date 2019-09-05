@@ -31,3 +31,4 @@ C:/Users/LVLA/Documents/GitHub/Shopping/Shopping/App/ShoppingApp/ShoppingApp/obj
 /Users/carlosdiaz/Shopping/Shopping/App/ShoppingApp/ShoppingApp/obj/Debug/netstandard2.0/XamlC.stamp
 /Users/carlosdiaz/Shopping/Shopping/App/ShoppingApp/ShoppingApp/obj/Debug/netstandard2.0/ShoppingApp.dll
 /Users/carlosdiaz/Shopping/Shopping/App/ShoppingApp/ShoppingApp/obj/Debug/netstandard2.0/ShoppingApp.pdb
+/Users/carlosdiaz/Shopping/Shopping/App/ShoppingApp/ShoppingApp/obj/Debug/netstandard2.0/Views/Templates/ConnectionView.xaml.g.cs

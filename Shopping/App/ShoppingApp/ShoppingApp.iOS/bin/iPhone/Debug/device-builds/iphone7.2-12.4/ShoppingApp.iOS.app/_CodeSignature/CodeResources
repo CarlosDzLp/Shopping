@@ -178,15 +178,15 @@
 		</data>
 		<key>ShoppingApp.aotdata.arm64</key>
 		<data>
-		AYN1705Id8SWkyt0xgyC3nDAn14=
+		r0pYLovH3n563JY+eedeoqRDUmU=
 		</data>
 		<key>ShoppingApp.dll</key>
 		<data>
-		Wf38waQ2iZehol00GFb0rv57B1s=
+		gznZ39A+Sa0CZFJGhOB6qvS+xZI=
 		</data>
 		<key>ShoppingApp.iOS.aotdata.arm64</key>
 		<data>
-		ZBKzSbdePMW/ZY/Y818LfmxOH8A=
+		14mWtqcdL+2f7HnffQZOEIfoXSg=
 		</data>
 		<key>ShoppingApp.iOS.exe</key>
 		<data>
@@ -202,7 +202,7 @@
 		</data>
 		<key>ShoppingApp.pdb</key>
 		<data>
-		mNl464T8F6kjHOi8MUvkBNGL3Tk=
+		ZZWqWlFWJhsclK1Mx+D7cEmWNKA=
 		</data>
 		<key>System.Core.aotdata.arm64</key>
 		<data>
@@ -396,6 +396,10 @@
 		<data>
 		Lz3i8e9zxSuyb5ZRbrsaO3c0Z8A=
 		</data>
+		<key>connection.json</key>
+		<data>
+		JE1FCmXT1Z4uWHppSNPVEZqb1iQ=
+		</data>
 		<key>cs/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
 		aV/agJqZFwOfQac0X2MfOxD7CDo=
@@ -418,7 +422,7 @@
 		</data>
 		<key>error.json</key>
 		<data>
-		YuUaCOn9s1BlzuZkz88ZwsnxYMQ=
+		tLBv+bBcBTnexv8EpXkJdWCLwVI=
 		</data>
 		<key>es/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
@@ -566,7 +570,7 @@
 		</data>
 		<key>success.json</key>
 		<data>
-		b6YtNOGww5zrhHdaCTmBcGGnYIo=
+		2K8D+R3513e7aKBlg9MtJJjg6oc=
 		</data>
 		<key>sv/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
@@ -1058,33 +1062,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AYN1705Id8SWkyt0xgyC3nDAn14=
+			r0pYLovH3n563JY+eedeoqRDUmU=
 			</data>
 			<key>hash2</key>
 			<data>
-			XXi7PBaxuwrADMHC88VKtXeOWmCXPoW5G0a1VjqBxkk=
+			EXRA9gs12FlytBoKyaxcb0Mb9f3EOMOqMOn0FL+tYVo=
 			</data>
 		</dict>
 		<key>ShoppingApp.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Wf38waQ2iZehol00GFb0rv57B1s=
+			gznZ39A+Sa0CZFJGhOB6qvS+xZI=
 			</data>
 			<key>hash2</key>
 			<data>
-			YSD8XDerkWg2rCBhW1TgrdypHgQKnY1vTKA5C8TsMj0=
+			fAjm+5aJmdgxtY6snUHCBZQ5/MjKh9ZeNG5lWdxmdug=
 			</data>
 		</dict>
 		<key>ShoppingApp.iOS.aotdata.arm64</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZBKzSbdePMW/ZY/Y818LfmxOH8A=
+			14mWtqcdL+2f7HnffQZOEIfoXSg=
 			</data>
 			<key>hash2</key>
 			<data>
-			8DEA9GA299P0CEBKytNg8xMRixuWJRhFAi9l4p4EH+M=
+			d62erxIltUmM3N9iVBdtb2fyAQmj4P8IFFa4bh4gMC0=
 			</data>
 		</dict>
 		<key>ShoppingApp.iOS.exe</key>
@@ -1124,11 +1128,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mNl464T8F6kjHOi8MUvkBNGL3Tk=
+			ZZWqWlFWJhsclK1Mx+D7cEmWNKA=
 			</data>
 			<key>hash2</key>
 			<data>
-			tctlMHhCRe/H+oiIqy1AFPl0yCDM2/8VQQ7UhzrESxI=
+			PuayJ0zgWzNQlNO2MNbZsjJXpWoUL1sh+2/SLeo5KqQ=
 			</data>
 		</dict>
 		<key>System.Core.aotdata.arm64</key>
@@ -1659,6 +1663,17 @@
 			TJ93CeZBVrIqL770XmVDo6pWDr9Xdpz3cJxMsG8EOB4=
 			</data>
 		</dict>
+		<key>connection.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JE1FCmXT1Z4uWHppSNPVEZqb1iQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			FyX6X9AQ9OzLH/DYvmA2IAKh1tPsNoi0A0j6ombHih0=
+			</data>
+		</dict>
 		<key>cs/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<dict>
 			<key>hash</key>
@@ -1718,11 +1733,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YuUaCOn9s1BlzuZkz88ZwsnxYMQ=
+			tLBv+bBcBTnexv8EpXkJdWCLwVI=
 			</data>
 			<key>hash2</key>
 			<data>
-			3PssJoP8fzwVTTO66zJkf3MZz+9lqlMKOzSfNSAMpZA=
+			zOIhUxxGA0m7bzo6pvHAaJxCSOeMVCecreAww+bHHjo=
 			</data>
 		</dict>
 		<key>es/Xamarin.Forms.Platform.iOS.resources.dll</key>
@@ -2125,11 +2140,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			b6YtNOGww5zrhHdaCTmBcGGnYIo=
+			2K8D+R3513e7aKBlg9MtJJjg6oc=
 			</data>
 			<key>hash2</key>
 			<data>
-			dwYB6lTAx4D2HAaofofk9U9kTb0y2ac/bjgQD0CApbc=
+			FYTiJpBKVFavDOs10KHLV7cU2SkI7zhrl111YZEEqf0=
 			</data>
 		</dict>
 		<key>sv/Xamarin.Forms.Platform.iOS.resources.dll</key>

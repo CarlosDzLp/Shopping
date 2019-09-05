@@ -6,13 +6,13 @@
     xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
     Spacing="0">
     <forms:AnimationView 
-        Animation="internetconnection.json" 
+        Animation="connection.json" 
         Loop="true"
         AutoPlay="true"
         HeightRequest="200"
         HorizontalOptions="FillAndExpand" />
     <Label
-        Text="No internet connection"
+        x:Name="connection"
         TextColor="OrangeRed"
         HorizontalOptions="CenterAndExpand"
         FontSize="15"/>

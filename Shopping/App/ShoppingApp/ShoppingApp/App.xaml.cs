@@ -11,7 +11,7 @@ namespace ShoppingApp
         {
             InitializeComponent();
             FlowListView.Init();
-            MainPage = new Views.Session.LoginPage();
+            MainPage = new Views.Principal.MasterPage();
         }
 
         protected override void OnStart()

@@ -22,7 +22,7 @@ namespace ShoppingApp.Views.Session
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            await PopupNavigation.Instance.PushAsync(new Views.Popup.MessageSuccess());
+            await PopupNavigation.Instance.PushAsync(new Views.Popup.MessageSuccess("Hola mexico!!"));
         }
     }
 }

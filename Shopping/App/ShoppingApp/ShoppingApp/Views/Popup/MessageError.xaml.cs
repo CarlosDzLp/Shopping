@@ -12,9 +12,14 @@ namespace ShoppingApp.Views.Popup
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MessageError : Rg.Plugins.Popup.Pages.PopupPage
     {
-        public MessageError()
+        public MessageError(string text)
         {
             InitializeComponent();
+            UpdateMessageText(text);
+        }
+        public void UpdateMessageText(string text)
+        {
+            message.Text = text;
         }
     }
 }

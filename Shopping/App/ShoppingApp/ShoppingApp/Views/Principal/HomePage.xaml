@@ -5,6 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:templates="clr-namespace:ShoppingApp.Views.Templates"
     Title="HOME"
     mc:Ignorable="d">
     <ContentPage.Content>
@@ -29,6 +30,7 @@
                 </SearchBar>
                 <BoxView HeightRequest="0.5" Color="Gray" />
             </StackLayout>
+            <templates:ConnectionView/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

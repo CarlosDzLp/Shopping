@@ -78,13 +78,10 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <BundleResource Include="Resources\info.json" />
-    <BundleResource Include="Resources\not_found.json" />
-    <BundleResource Include="Resources\success.json" />
-    <BundleResource Include="Resources\error.json" />
-    <BundleResource Include="error.json" />
     <BundleResource Include="info.json" />
     <BundleResource Include="not_found.json" />
+    <BundleResource Include="connection.json" />
+    <BundleResource Include="error.json" />
     <BundleResource Include="success.json" />
   </ItemGroup>
   <ItemGroup>

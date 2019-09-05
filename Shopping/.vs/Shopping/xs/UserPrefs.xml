@@ -1,30 +1,14 @@
 ﻿<Properties StartupConfiguration="{3187E2B3-7AAE-48C6-8B4B-56AE0C6751A8}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="App/ShoppingApp/ShoppingApp/Views/Templates/ConnectionView.xaml">
-    <Files>
-      <File FileName="App/ShoppingApp/ShoppingApp/Views/Templates/ConnectionView.xaml" Line="18" Column="9" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Shopping" expanded="True">
-            <Node name="App" expanded="True">
-              <Node name="ShoppingApp" expanded="True">
-                <Node name="Views" expanded="True">
-                  <Node name="Templates" expanded="True">
-                    <Node name="ConnectionView.xaml" expanded="True" />
-                  </Node>
-                </Node>
-              </Node>
-              <Node name="ShoppingApp.iOS" expanded="True">
-                <Node name="not_found.json" selected="True" />
-              </Node>
-            </Node>
-          </Node>
+          <Node />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.App.ShoppingApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
+  <MonoDevelop.Ide.ItemProperties.App.ShoppingApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.f7859fedac03736ea0086d371566163bf67803b0" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.ItemProperties.Web.Shopping PreferredExecutionTarget="MonoDevelop.Default" />

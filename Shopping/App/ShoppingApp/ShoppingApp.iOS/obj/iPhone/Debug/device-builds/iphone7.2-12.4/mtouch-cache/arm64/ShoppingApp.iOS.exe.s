@@ -44776,7 +44776,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0
-	.byte 78,201,41,24,77,62,5,122,212,130,114,251,42,43,226,158
+	.byte 70,76,45,7,89,254,38,46,114,75,82,154,18,208,167,113
 	.globl _mono_aot_module_ShoppingApp_iOS_info
 	.align 3
 _mono_aot_module_ShoppingApp_iOS_info:
