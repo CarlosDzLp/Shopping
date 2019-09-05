@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ShoppingModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="ShoppingEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="spDelUser">
+      <Parameter Name="UserID" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="spInsUser">
+      <Parameter Name="UserName" Mode="In" Type="String" />
+      <Parameter Name="UserLastName" Mode="In" Type="String" />
+      <Parameter Name="UserAddress" Mode="In" Type="String" />
+      <Parameter Name="UserSex" Mode="In" Type="String" />
+      <Parameter Name="UserEmail" Mode="In" Type="String" />
+      <Parameter Name="UserPassword" Mode="In" Type="String" />
+      <Parameter Name="UserLatitude" Mode="In" Type="String" />
+      <Parameter Name="UserLongitude" Mode="In" Type="String" />
+      <Parameter Name="UserImage" Mode="In" Type="Binary" />
+      <Parameter Name="UserType" Mode="In" Type="Int32" />
+      <Parameter Name="UserActive" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="spSelUser" ReturnType="Collection(ShoppingModel.spSelUser_Result)">
+      <Parameter Name="UserEmail" Mode="In" Type="String" />
+      <Parameter Name="UserPassword" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spSelUserALL" ReturnType="Collection(ShoppingModel.spSelUserALL_Result)">
+      <Parameter Name="UserActive" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="spUpdUser">
+      <Parameter Name="UserID" Mode="In" Type="Guid" />
+      <Parameter Name="UserName" Mode="In" Type="String" />
+      <Parameter Name="UserLastName" Mode="In" Type="String" />
+      <Parameter Name="UserAddress" Mode="In" Type="String" />
+      <Parameter Name="UserSex" Mode="In" Type="String" />
+      <Parameter Name="UserEmail" Mode="In" Type="String" />
+      <Parameter Name="UserPassword" Mode="In" Type="String" />
+      <Parameter Name="UserLatitude" Mode="In" Type="String" />
+      <Parameter Name="UserLongitude" Mode="In" Type="String" />
+      <Parameter Name="UserImage" Mode="In" Type="Binary" />
+      <Parameter Name="UserType" Mode="In" Type="Int32" />
+      <Parameter Name="UserActive" Mode="In" Type="Boolean" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="spSelUser_Result">
+    <Property Type="Guid" Name="UserID" Nullable="false" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UserLastName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UserAddress" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="UserSex" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UserEmail" Nullable="false" />
+    <Property Type="String" Name="UserPassword" Nullable="false" />
+    <Property Type="String" Name="UserLatitude" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="UserLongitude" Nullable="true" MaxLength="50" />
+    <Property Type="Binary" Name="UserImage" Nullable="true" MaxLength="Max" />
+    <Property Type="Int32" Name="UserType" Nullable="false" />
+    <Property Type="Boolean" Name="UserActive" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="spSelUserALL_Result">
+    <Property Type="Guid" Name="UserID" Nullable="false" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UserLastName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UserAddress" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="UserSex" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UserEmail" Nullable="false" />
+    <Property Type="String" Name="UserPassword" Nullable="false" />
+    <Property Type="String" Name="UserLatitude" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="UserLongitude" Nullable="true" MaxLength="50" />
+    <Property Type="Binary" Name="UserImage" Nullable="true" MaxLength="Max" />
+    <Property Type="Int32" Name="UserType" Nullable="false" />
+    <Property Type="Boolean" Name="UserActive" Nullable="false" />
+  </ComplexType>
+</Schema>

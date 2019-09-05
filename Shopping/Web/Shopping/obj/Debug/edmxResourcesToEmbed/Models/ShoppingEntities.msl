@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ShoppingModelStoreContainer" CdmEntityContainer="ShoppingEntities">
+    <FunctionImportMapping FunctionImportName="spDelUser" FunctionName="ShoppingModel.Store.spDelUser" />
+    <FunctionImportMapping FunctionImportName="spInsUser" FunctionName="ShoppingModel.Store.spInsUser" />
+    <FunctionImportMapping FunctionImportName="spSelUser" FunctionName="ShoppingModel.Store.spSelUser">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ShoppingModel.spSelUser_Result">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserLastName" ColumnName="UserLastName" />
+          <ScalarProperty Name="UserAddress" ColumnName="UserAddress" />
+          <ScalarProperty Name="UserSex" ColumnName="UserSex" />
+          <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
+          <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+          <ScalarProperty Name="UserLatitude" ColumnName="UserLatitude" />
+          <ScalarProperty Name="UserLongitude" ColumnName="UserLongitude" />
+          <ScalarProperty Name="UserImage" ColumnName="UserImage" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="UserActive" ColumnName="UserActive" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spSelUserALL" FunctionName="ShoppingModel.Store.spSelUserALL">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ShoppingModel.spSelUserALL_Result">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserLastName" ColumnName="UserLastName" />
+          <ScalarProperty Name="UserAddress" ColumnName="UserAddress" />
+          <ScalarProperty Name="UserSex" ColumnName="UserSex" />
+          <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
+          <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+          <ScalarProperty Name="UserLatitude" ColumnName="UserLatitude" />
+          <ScalarProperty Name="UserLongitude" ColumnName="UserLongitude" />
+          <ScalarProperty Name="UserImage" ColumnName="UserImage" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="UserActive" ColumnName="UserActive" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spUpdUser" FunctionName="ShoppingModel.Store.spUpdUser" />
+  </EntityContainerMapping>
+</Mapping>

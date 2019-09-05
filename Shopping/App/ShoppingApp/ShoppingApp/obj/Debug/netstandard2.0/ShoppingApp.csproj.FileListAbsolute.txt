@@ -1,0 +1,14 @@
+C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp\bin\Debug\netstandard2.0\ShoppingApp.deps.json
+C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp\bin\Debug\netstandard2.0\ShoppingApp.dll
+C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp\bin\Debug\netstandard2.0\ShoppingApp.pdb
+C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp\obj\Debug\netstandard2.0\Controls\CustomNavigationPage.xaml.g.cs
+C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp\obj\Debug\netstandard2.0\Views\Principal\HomePage.xaml.g.cs
+C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp\obj\Debug\netstandard2.0\Views\Principal\MasterPage.xaml.g.cs
+C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp\obj\Debug\netstandard2.0\Views\Principal\MenuPage.xaml.g.cs
+C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp\obj\Debug\netstandard2.0\Views\Session\LoginPage.xaml.g.cs
+C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp\obj\Debug\netstandard2.0\ShoppingApp.AssemblyInfoInputs.cache
+C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp\obj\Debug\netstandard2.0\ShoppingApp.AssemblyInfo.cs
+C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp\obj\Debug\netstandard2.0\ShoppingApp.dll
+C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp\obj\Debug\netstandard2.0\ShoppingApp.pdb
+C:\Users\LVLA\Documents\GitHub\Shopping\Shopping\App\ShoppingApp\ShoppingApp\obj\Debug\netstandard2.0\ShoppingApp.csprojAssemblyReference.cache

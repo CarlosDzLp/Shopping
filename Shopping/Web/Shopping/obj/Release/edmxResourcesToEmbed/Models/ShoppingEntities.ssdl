@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ShoppingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <Function Name="spDelUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="spInsUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserName" Type="varchar" Mode="In" />
+    <Parameter Name="UserLastName" Type="varchar" Mode="In" />
+    <Parameter Name="UserAddress" Type="varchar" Mode="In" />
+    <Parameter Name="UserSex" Type="varchar" Mode="In" />
+    <Parameter Name="UserEmail" Type="varchar(max)" Mode="In" />
+    <Parameter Name="UserPassword" Type="varchar(max)" Mode="In" />
+    <Parameter Name="UserLatitude" Type="varchar" Mode="In" />
+    <Parameter Name="UserLongitude" Type="varchar" Mode="In" />
+    <Parameter Name="UserImage" Type="image" Mode="In" />
+    <Parameter Name="UserType" Type="int" Mode="In" />
+    <Parameter Name="UserActive" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="spSelUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserEmail" Type="varchar(max)" Mode="In" />
+    <Parameter Name="UserPassword" Type="varchar(max)" Mode="In" />
+  </Function>
+  <Function Name="spSelUserALL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserActive" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="spUpdUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="UserName" Type="varchar" Mode="In" />
+    <Parameter Name="UserLastName" Type="varchar" Mode="In" />
+    <Parameter Name="UserAddress" Type="varchar" Mode="In" />
+    <Parameter Name="UserSex" Type="varchar" Mode="In" />
+    <Parameter Name="UserEmail" Type="varchar(max)" Mode="In" />
+    <Parameter Name="UserPassword" Type="varchar(max)" Mode="In" />
+    <Parameter Name="UserLatitude" Type="varchar" Mode="In" />
+    <Parameter Name="UserLongitude" Type="varchar" Mode="In" />
+    <Parameter Name="UserImage" Type="image" Mode="In" />
+    <Parameter Name="UserType" Type="int" Mode="In" />
+    <Parameter Name="UserActive" Type="bit" Mode="In" />
+  </Function>
+  <EntityContainer Name="ShoppingModelStoreContainer" />
+</Schema>

@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ShoppingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <Function Name="spDelCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CategoryID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="spDelUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="spInsCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CategoryName" Type="varchar" Mode="In" />
+          <Parameter Name="CategoryDescription" Type="varchar" Mode="In" />
+          <Parameter Name="CategoryImage" Type="image" Mode="In" />
+        </Function>
+        <Function Name="spInsUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserName" Type="varchar" Mode="In" />
+          <Parameter Name="UserLastName" Type="varchar" Mode="In" />
+          <Parameter Name="UserAddress" Type="varchar" Mode="In" />
+          <Parameter Name="UserSex" Type="varchar" Mode="In" />
+          <Parameter Name="UserEmail" Type="varchar(max)" Mode="In" />
+          <Parameter Name="UserPassword" Type="varchar(max)" Mode="In" />
+          <Parameter Name="UserLatitude" Type="varchar" Mode="In" />
+          <Parameter Name="UserLongitude" Type="varchar" Mode="In" />
+          <Parameter Name="UserImage" Type="image" Mode="In" />
+          <Parameter Name="UserType" Type="int" Mode="In" />
+          <Parameter Name="UserActive" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="spSelAllCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="spSelCategoryXID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CategoryID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="spSelUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserEmail" Type="varchar(max)" Mode="In" />
+          <Parameter Name="UserPassword" Type="varchar(max)" Mode="In" />
+        </Function>
+        <Function Name="spSelUserALL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserActive" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="spUpdCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CategoryID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="CategoryName" Type="varchar" Mode="In" />
+          <Parameter Name="CategoryDescription" Type="varchar" Mode="In" />
+          <Parameter Name="CategoryImage" Type="image" Mode="In" />
+          <Parameter Name="CategoryDateCreated" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="spUpdUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="UserName" Type="varchar" Mode="In" />
+          <Parameter Name="UserLastName" Type="varchar" Mode="In" />
+          <Parameter Name="UserAddress" Type="varchar" Mode="In" />
+          <Parameter Name="UserSex" Type="varchar" Mode="In" />
+          <Parameter Name="UserEmail" Type="varchar(max)" Mode="In" />
+          <Parameter Name="UserPassword" Type="varchar(max)" Mode="In" />
+          <Parameter Name="UserLatitude" Type="varchar" Mode="In" />
+          <Parameter Name="UserLongitude" Type="varchar" Mode="In" />
+          <Parameter Name="UserImage" Type="image" Mode="In" />
+          <Parameter Name="UserType" Type="int" Mode="In" />
+          <Parameter Name="UserActive" Type="bit" Mode="In" />
+        </Function>
+        <EntityContainer Name="ShoppingModelStoreContainer" />
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ShoppingModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="ShoppingEntities" annotation:LazyLoadingEnabled="true" >
+          <FunctionImport Name="spDelUser">
+          <Parameter Name="UserID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="spInsUser">
+            <Parameter Name="UserName" Mode="In" Type="String" />
+            <Parameter Name="UserLastName" Mode="In" Type="String" />
+            <Parameter Name="UserAddress" Mode="In" Type="String" />
+            <Parameter Name="UserSex" Mode="In" Type="String" />
+            <Parameter Name="UserEmail" Mode="In" Type="String" />
+            <Parameter Name="UserPassword" Mode="In" Type="String" />
+            <Parameter Name="UserLatitude" Mode="In" Type="String" />
+            <Parameter Name="UserLongitude" Mode="In" Type="String" />
+            <Parameter Name="UserImage" Mode="In" Type="Binary" />
+            <Parameter Name="UserType" Mode="In" Type="Int32" />
+            <Parameter Name="UserActive" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="spSelUser" ReturnType="Collection(ShoppingModel.spSelUser_Result)">
+            <Parameter Name="UserEmail" Mode="In" Type="String" />
+            <Parameter Name="UserPassword" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="spSelUserALL" ReturnType="Collection(ShoppingModel.spSelUserALL_Result)">
+          <Parameter Name="UserActive" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="spUpdUser">
+            <Parameter Name="UserID" Mode="In" Type="Guid" />
+            <Parameter Name="UserName" Mode="In" Type="String" />
+            <Parameter Name="UserLastName" Mode="In" Type="String" />
+            <Parameter Name="UserAddress" Mode="In" Type="String" />
+            <Parameter Name="UserSex" Mode="In" Type="String" />
+            <Parameter Name="UserEmail" Mode="In" Type="String" />
+            <Parameter Name="UserPassword" Mode="In" Type="String" />
+            <Parameter Name="UserLatitude" Mode="In" Type="String" />
+            <Parameter Name="UserLongitude" Mode="In" Type="String" />
+            <Parameter Name="UserImage" Mode="In" Type="Binary" />
+            <Parameter Name="UserType" Mode="In" Type="Int32" />
+            <Parameter Name="UserActive" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="spDelCategory">
+            <Parameter Name="CategoryID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="spInsCategory">
+            <Parameter Name="CategoryName" Mode="In" Type="String" />
+            <Parameter Name="CategoryDescription" Mode="In" Type="String" />
+            <Parameter Name="CategoryImage" Mode="In" Type="Binary" />
+          </FunctionImport>
+          <FunctionImport Name="spSelAllCategory" ReturnType="Collection(ShoppingModel.spSelAllCategory_Result)" />
+          <FunctionImport Name="spSelCategoryXID" ReturnType="Collection(ShoppingModel.spSelCategoryXID_Result)">
+            <Parameter Name="CategoryID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="spUpdCategory">
+            <Parameter Name="CategoryID" Mode="In" Type="Guid" />
+            <Parameter Name="CategoryName" Mode="In" Type="String" />
+            <Parameter Name="CategoryDescription" Mode="In" Type="String" />
+            <Parameter Name="CategoryImage" Mode="In" Type="Binary" />
+            <Parameter Name="CategoryDateCreated" Mode="In" Type="DateTime" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="spSelUser_Result">
+          <Property Type="Guid" Name="UserID" Nullable="false" />
+          <Property Type="String" Name="UserName" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="UserLastName" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="UserAddress" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="UserSex" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="UserEmail" Nullable="false" />
+          <Property Type="String" Name="UserPassword" Nullable="false" />
+          <Property Type="String" Name="UserLatitude" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="UserLongitude" Nullable="true" MaxLength="50" />
+          <Property Type="Binary" Name="UserImage" Nullable="true" MaxLength="Max" />
+          <Property Type="Int32" Name="UserType" Nullable="false" />
+          <Property Type="Boolean" Name="UserActive" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="spSelUserALL_Result">
+          <Property Type="Guid" Name="UserID" Nullable="false" />
+          <Property Type="String" Name="UserName" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="UserLastName" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="UserAddress" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="UserSex" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="UserEmail" Nullable="false" />
+          <Property Type="String" Name="UserPassword" Nullable="false" />
+          <Property Type="String" Name="UserLatitude" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="UserLongitude" Nullable="true" MaxLength="50" />
+          <Property Type="Binary" Name="UserImage" Nullable="true" MaxLength="Max" />
+          <Property Type="Int32" Name="UserType" Nullable="false" />
+          <Property Type="Boolean" Name="UserActive" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="spSelAllCategory_Result">
+          <Property Type="Guid" Name="CategoryID" Nullable="false" />
+          <Property Type="String" Name="CategoryName" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="CategoryDescription" Nullable="false" MaxLength="100" />
+          <Property Type="Binary" Name="CategoryImage" Nullable="true" MaxLength="Max" />
+          <Property Type="DateTime" Name="CategoryDateCreated" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="CategoryDatemodified" Nullable="true" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="spSelCategoryXID_Result">
+          <Property Type="Guid" Name="CategoryID" Nullable="false" />
+          <Property Type="String" Name="CategoryName" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="CategoryDescription" Nullable="false" MaxLength="100" />
+          <Property Type="Binary" Name="CategoryImage" Nullable="true" MaxLength="Max" />
+          <Property Type="DateTime" Name="CategoryDateCreated" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="CategoryDatemodified" Nullable="true" Precision="23" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ShoppingModelStoreContainer" CdmEntityContainer="ShoppingEntities" >
+          <FunctionImportMapping FunctionImportName="spDelUser" FunctionName="ShoppingModel.Store.spDelUser" />
+          <FunctionImportMapping FunctionImportName="spInsUser" FunctionName="ShoppingModel.Store.spInsUser" />
+          <FunctionImportMapping FunctionImportName="spSelUser" FunctionName="ShoppingModel.Store.spSelUser">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ShoppingModel.spSelUser_Result">
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="UserLastName" ColumnName="UserLastName" />
+                <ScalarProperty Name="UserAddress" ColumnName="UserAddress" />
+                <ScalarProperty Name="UserSex" ColumnName="UserSex" />
+                <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
+                <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+                <ScalarProperty Name="UserLatitude" ColumnName="UserLatitude" />
+                <ScalarProperty Name="UserLongitude" ColumnName="UserLongitude" />
+                <ScalarProperty Name="UserImage" ColumnName="UserImage" />
+                <ScalarProperty Name="UserType" ColumnName="UserType" />
+                <ScalarProperty Name="UserActive" ColumnName="UserActive" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spSelUserALL" FunctionName="ShoppingModel.Store.spSelUserALL">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ShoppingModel.spSelUserALL_Result">
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="UserLastName" ColumnName="UserLastName" />
+                <ScalarProperty Name="UserAddress" ColumnName="UserAddress" />
+                <ScalarProperty Name="UserSex" ColumnName="UserSex" />
+                <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
+                <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+                <ScalarProperty Name="UserLatitude" ColumnName="UserLatitude" />
+                <ScalarProperty Name="UserLongitude" ColumnName="UserLongitude" />
+                <ScalarProperty Name="UserImage" ColumnName="UserImage" />
+                <ScalarProperty Name="UserType" ColumnName="UserType" />
+                <ScalarProperty Name="UserActive" ColumnName="UserActive" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spUpdUser" FunctionName="ShoppingModel.Store.spUpdUser" />
+          <FunctionImportMapping FunctionImportName="spDelCategory" FunctionName="ShoppingModel.Store.spDelCategory" />
+          <FunctionImportMapping FunctionImportName="spInsCategory" FunctionName="ShoppingModel.Store.spInsCategory" />
+          <FunctionImportMapping FunctionImportName="spSelAllCategory" FunctionName="ShoppingModel.Store.spSelAllCategory">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ShoppingModel.spSelAllCategory_Result">
+                <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+                <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+                <ScalarProperty Name="CategoryDescription" ColumnName="CategoryDescription" />
+                <ScalarProperty Name="CategoryImage" ColumnName="CategoryImage" />
+                <ScalarProperty Name="CategoryDateCreated" ColumnName="CategoryDateCreated" />
+                <ScalarProperty Name="CategoryDatemodified" ColumnName="CategoryDatemodified" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spSelCategoryXID" FunctionName="ShoppingModel.Store.spSelCategoryXID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ShoppingModel.spSelCategoryXID_Result">
+                <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+                <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+                <ScalarProperty Name="CategoryDescription" ColumnName="CategoryDescription" />
+                <ScalarProperty Name="CategoryImage" ColumnName="CategoryImage" />
+                <ScalarProperty Name="CategoryDateCreated" ColumnName="CategoryDateCreated" />
+                <ScalarProperty Name="CategoryDatemodified" ColumnName="CategoryDatemodified" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spUpdCategory" FunctionName="ShoppingModel.Store.spUpdCategory" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

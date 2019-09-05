@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DLToolkit.Forms.Controls;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -9,8 +10,8 @@ namespace ShoppingApp
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+            FlowListView.Init();
+            MainPage = new Views.Session.LoginPage();
         }
 
         protected override void OnStart()

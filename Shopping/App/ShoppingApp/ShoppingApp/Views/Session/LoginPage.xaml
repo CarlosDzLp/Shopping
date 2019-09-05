@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<controls:CustomContentPage
+    x:Class="ShoppingApp.Views.Session.LoginPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:ShoppingApp.Controls;assembly=ShoppingApp"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    BackgroundColor="White"
+    StatusBarColor="False"
+    mc:Ignorable="d">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Fill" VerticalOptions="Fill">
+            <StackLayout Padding="40,0" VerticalOptions="CenterAndExpand">
+                <Image Source="shopping_logo" />
+                <controls:FloatingEntry
+                    ActivePlaceholderColor="Black"
+                    FloatingHintEnabled="True"
+                    Placeholder="EMAIL" />
+                <controls:FloatingEntry
+                    ActivePlaceholderColor="Black"
+                    FloatingHintEnabled="True"
+                    Placeholder="CONTRASEÑA" />
+                <Label
+                    Margin="0,20"
+                    FontSize="15"
+                    HorizontalTextAlignment="Center"
+                    Text="Olvido la contraseña"
+                    TextColor="Black" />
+                <Button
+                    BackgroundColor="Black"
+                    CornerRadius="0"
+                    Text="Iniciar Sesion"
+                    TextColor="White" />
+            </StackLayout>
+            <StackLayout>
+                <Label
+                    Margin="0,0,0,10"
+                    FontSize="15"
+                    HorizontalTextAlignment="Center"
+                    Text="Registrarse"
+                    TextColor="Black"
+                    TextDecorations="Underline" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</controls:CustomContentPage>
