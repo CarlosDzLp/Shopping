@@ -141,7 +141,7 @@ namespace Shopping.BussinesLayer
                 return response;
             }
         }
-        public async Task<Response<List<CategoryViewModel>>> SelectCategory(Guid categoryID)
+        public async Task<Response<List<CategoryViewModel>>> SelectCategory()
         {
             Response<List<CategoryViewModel>> response = new Response<List<CategoryViewModel>>();
             try
