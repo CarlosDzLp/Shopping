@@ -4,16 +4,64 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="True"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="clr-namespace:ShoppingApp.Controls"
     Title="Menu"
     IconImageSource="ic_menu"
     mc:Ignorable="d">
     <ContentPage.Content>
         <StackLayout>
-            <Label
-                HorizontalOptions="CenterAndExpand"
-                Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" />
+            <StackLayout
+                HeightRequest="150">
+                <Image
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    Source="shopping_logo"
+                    HeightRequest="100"
+                    WidthRequest="100"/>
+            </StackLayout>
+            <StackLayout>
+                <controls:CustomListView
+                    VerticalOptions="Fill"
+                    HorizontalOptions="Fill"
+                    VerticalScrollBarVisibility="Never"
+                    HasUnevenRows="True"
+                    SeparatorVisibility="None"
+                    ItemsSource="{Binding ListMenu}">
+                    <controls:CustomListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid
+                                    ColumnSpacing="0"
+                                    Padding="10"
+                                    Margin="0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="2*"/>
+                                        <ColumnDefinition Width="3*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <StackLayout
+                                        Grid.Column="0"
+                                        Grid.Row="0">
+                                        <Image
+                                            Source="{Binding Icon}"/>
+                                    </StackLayout>
+                                    <StackLayout
+                                        Grid.Column="0"
+                                        Grid.Row="0">
+                                        <Label
+                                            TextColor="Black"
+                                            VerticalTextAlignment="Center"
+                                            VerticalOptions="Center"
+                                            Text="{Binding Title}"/>
+                                    </StackLayout>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </controls:CustomListView.ItemTemplate>
+                </controls:CustomListView>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

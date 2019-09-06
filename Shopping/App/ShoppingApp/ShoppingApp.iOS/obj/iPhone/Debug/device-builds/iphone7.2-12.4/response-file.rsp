@@ -3,7 +3,7 @@
 --executable=ShoppingApp.iOS
  --debug
  --sgen-conc
- --linksdkonly
+ --nolink
 --sdkroot=/Applications/Xcode.app/Contents/Developer
 --sdk=12.4
 --targetver=8.0
