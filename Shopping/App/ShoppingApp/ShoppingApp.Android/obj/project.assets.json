@@ -977,7 +977,7 @@
       ]
     },
     "DLToolkit.Forms.Controls.FlowListView/2.0.11": {
-      "sha512": "n/TIbW3a7q/h5wA5vt8VfkN3eecJN8nMlPVu3NS7hvFODg0YqFHXDgbX1O/a9agcuk5Km6DZqJqpxpcYRS9sOQ==",
+      "sha512": "zoXUKFvB+M3XIMrmSWBIb3Wu3zKR7a/moQAuCpJ2bKbDcff1B6/D3MNAnhEoFyWf+EQ9QGrok3y8jrvNnp1VdA==",
       "type": "package",
       "path": "dltoolkit.forms.controls.flowlistview/2.0.11",
       "files": [
@@ -2203,32 +2203,39 @@
     ]
   },
   "packageFolders": {
-    "/Users/carlosdiaz/.nuget/packages/": {}
+    "C:\\Users\\LVLA\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/carlosdiaz/Shopping/Shopping/App/ShoppingApp/ShoppingApp.Android/ShoppingApp.Android.csproj",
+      "projectUniqueName": "C:\\Users\\LVLA\\Documents\\GitHub\\Shopping\\Shopping\\App\\ShoppingApp\\ShoppingApp.Android\\ShoppingApp.Android.csproj",
       "projectName": "ShoppingApp.Android",
-      "projectPath": "/Users/carlosdiaz/Shopping/Shopping/App/ShoppingApp/ShoppingApp.Android/ShoppingApp.Android.csproj",
-      "packagesPath": "/Users/carlosdiaz/.nuget/packages/",
-      "outputPath": "/Users/carlosdiaz/Shopping/Shopping/App/ShoppingApp/ShoppingApp.Android/obj/",
+      "projectPath": "C:\\Users\\LVLA\\Documents\\GitHub\\Shopping\\Shopping\\App\\ShoppingApp\\ShoppingApp.Android\\ShoppingApp.Android.csproj",
+      "packagesPath": "C:\\Users\\LVLA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\LVLA\\Documents\\GitHub\\Shopping\\Shopping\\App\\ShoppingApp\\ShoppingApp.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "/Users/carlosdiaz/.config/NuGet/NuGet.Config"
+        "C:\\Users\\LVLA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "monoandroid90"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "/Users/carlosdiaz/Shopping/Shopping/App/ShoppingApp/ShoppingApp/ShoppingApp.csproj": {
-              "projectPath": "/Users/carlosdiaz/Shopping/Shopping/App/ShoppingApp/ShoppingApp/ShoppingApp.csproj"
+            "C:\\Users\\LVLA\\Documents\\GitHub\\Shopping\\Shopping\\App\\ShoppingApp\\ShoppingApp\\ShoppingApp.csproj": {
+              "projectPath": "C:\\Users\\LVLA\\Documents\\GitHub\\Shopping\\Shopping\\App\\ShoppingApp\\ShoppingApp\\ShoppingApp.csproj"
             }
           }
         }

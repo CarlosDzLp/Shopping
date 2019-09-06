@@ -1,33 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "/Users/carlosdiaz/Shopping/Shopping/App/ShoppingApp/ShoppingApp.iOS/ShoppingApp.iOS.csproj": {}
+    "C:\\Users\\LVLA\\Documents\\GitHub\\Shopping\\Shopping\\App\\ShoppingApp\\ShoppingApp.iOS\\ShoppingApp.iOS.csproj": {}
   },
   "projects": {
-    "/Users/carlosdiaz/Shopping/Shopping/App/ShoppingApp/ShoppingApp.iOS/ShoppingApp.iOS.csproj": {
+    "C:\\Users\\LVLA\\Documents\\GitHub\\Shopping\\Shopping\\App\\ShoppingApp\\ShoppingApp.iOS\\ShoppingApp.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/carlosdiaz/Shopping/Shopping/App/ShoppingApp/ShoppingApp.iOS/ShoppingApp.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\LVLA\\Documents\\GitHub\\Shopping\\Shopping\\App\\ShoppingApp\\ShoppingApp.iOS\\ShoppingApp.iOS.csproj",
         "projectName": "ShoppingApp.iOS",
-        "projectPath": "/Users/carlosdiaz/Shopping/Shopping/App/ShoppingApp/ShoppingApp.iOS/ShoppingApp.iOS.csproj",
-        "packagesPath": "/Users/carlosdiaz/.nuget/packages/",
-        "outputPath": "/Users/carlosdiaz/Shopping/Shopping/App/ShoppingApp/ShoppingApp.iOS/obj/",
+        "projectPath": "C:\\Users\\LVLA\\Documents\\GitHub\\Shopping\\Shopping\\App\\ShoppingApp\\ShoppingApp.iOS\\ShoppingApp.iOS.csproj",
+        "packagesPath": "C:\\Users\\LVLA\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LVLA\\Documents\\GitHub\\Shopping\\Shopping\\App\\ShoppingApp\\ShoppingApp.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "/Users/carlosdiaz/.config/NuGet/NuGet.Config"
+          "C:\\Users\\LVLA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "xamarinios10"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "/Users/carlosdiaz/Shopping/Shopping/App/ShoppingApp/ShoppingApp/ShoppingApp.csproj": {
-                "projectPath": "/Users/carlosdiaz/Shopping/Shopping/App/ShoppingApp/ShoppingApp/ShoppingApp.csproj"
+              "C:\\Users\\LVLA\\Documents\\GitHub\\Shopping\\Shopping\\App\\ShoppingApp\\ShoppingApp\\ShoppingApp.csproj": {
+                "projectPath": "C:\\Users\\LVLA\\Documents\\GitHub\\Shopping\\Shopping\\App\\ShoppingApp\\ShoppingApp\\ShoppingApp.csproj"
               }
             }
           }
@@ -75,25 +81,29 @@
         }
       }
     },
-    "/Users/carlosdiaz/Shopping/Shopping/App/ShoppingApp/ShoppingApp/ShoppingApp.csproj": {
+    "C:\\Users\\LVLA\\Documents\\GitHub\\Shopping\\Shopping\\App\\ShoppingApp\\ShoppingApp\\ShoppingApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/carlosdiaz/Shopping/Shopping/App/ShoppingApp/ShoppingApp/ShoppingApp.csproj",
+        "projectUniqueName": "C:\\Users\\LVLA\\Documents\\GitHub\\Shopping\\Shopping\\App\\ShoppingApp\\ShoppingApp\\ShoppingApp.csproj",
         "projectName": "ShoppingApp",
-        "projectPath": "/Users/carlosdiaz/Shopping/Shopping/App/ShoppingApp/ShoppingApp/ShoppingApp.csproj",
-        "packagesPath": "/Users/carlosdiaz/.nuget/packages/",
-        "outputPath": "/Users/carlosdiaz/Shopping/Shopping/App/ShoppingApp/ShoppingApp/obj/",
+        "projectPath": "C:\\Users\\LVLA\\Documents\\GitHub\\Shopping\\Shopping\\App\\ShoppingApp\\ShoppingApp\\ShoppingApp.csproj",
+        "packagesPath": "C:\\Users\\LVLA\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LVLA\\Documents\\GitHub\\Shopping\\Shopping\\App\\ShoppingApp\\ShoppingApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/carlosdiaz/.config/NuGet/NuGet.Config"
+          "C:\\Users\\LVLA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -151,7 +161,11 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100-preview9-014004/RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100-preview8-013656\\RuntimeIdentifierGraph.json"
+>>>>>>> 2dc40f703735e33b26b22cf638fae8e3f0f919c8
         }
       }
     }
