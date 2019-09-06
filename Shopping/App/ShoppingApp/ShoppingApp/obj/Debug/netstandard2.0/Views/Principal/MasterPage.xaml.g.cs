@@ -13,7 +13,7 @@
 namespace ShoppingApp.Views.Principal {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views/Principal/MasterPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\Principal\\MasterPage.xaml")]
     public partial class MasterPage : global::Xamarin.Forms.MasterDetailPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

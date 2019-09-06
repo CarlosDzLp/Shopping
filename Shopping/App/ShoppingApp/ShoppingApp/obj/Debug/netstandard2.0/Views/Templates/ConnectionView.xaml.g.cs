@@ -13,7 +13,7 @@
 namespace ShoppingApp.Views.Templates {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views/Templates/ConnectionView.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\Templates\\ConnectionView.xaml")]
     public partial class ConnectionView : global::Xamarin.Forms.StackLayout {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

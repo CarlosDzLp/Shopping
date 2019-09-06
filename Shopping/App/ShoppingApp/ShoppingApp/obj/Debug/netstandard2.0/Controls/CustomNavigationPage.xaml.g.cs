@@ -13,7 +13,7 @@
 namespace ShoppingApp.Controls {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Controls/CustomNavigationPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Controls\\CustomNavigationPage.xaml")]
     public partial class CustomNavigationPage : global::Xamarin.Forms.NavigationPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
