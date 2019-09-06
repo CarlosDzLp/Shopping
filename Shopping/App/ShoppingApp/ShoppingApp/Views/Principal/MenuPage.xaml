@@ -29,34 +29,39 @@
                     VerticalScrollBarVisibility="Never"
                     HasUnevenRows="True"
                     SeparatorVisibility="None"
-                    ItemsSource="{Binding ListMenu}">
+                    ItemsSource="{Binding ListMenu}"
+                    SelectedItemCommand="{Binding SelectedItemMenu}">
                     <controls:CustomListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
-                                <Grid
-                                    ColumnSpacing="0"
-                                    Padding="10"
-                                    Margin="0">
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="2*"/>
-                                        <ColumnDefinition Width="3*"/>
-                                    </Grid.ColumnDefinitions>
-                                    <StackLayout
-                                        Grid.Column="0"
-                                        Grid.Row="0">
-                                        <Image
-                                            Source="{Binding Icon}"/>
-                                    </StackLayout>
-                                    <StackLayout
-                                        Grid.Column="0"
-                                        Grid.Row="0">
-                                        <Label
-                                            TextColor="Black"
-                                            VerticalTextAlignment="Center"
-                                            VerticalOptions="Center"
-                                            Text="{Binding Title}"/>
-                                    </StackLayout>
-                                </Grid>
+                                <StackLayout
+                                    BackgroundColor="{Binding BackgroundMenu}">
+                                    <Grid
+                                        ColumnSpacing="0"
+                                        Padding="5"
+                                        Margin="0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="2*"/>
+                                            <ColumnDefinition Width="3*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <StackLayout
+                                            Grid.Column="0"
+                                            Grid.Row="0">
+                                            <Image
+                                                Source="{Binding Icon}"/>
+                                        </StackLayout>
+                                        <StackLayout
+                                            Grid.Column="1"
+                                            Grid.Row="0"
+                                            VerticalOptions="Center">
+                                            <Label
+                                                TextColor="Black"
+                                                VerticalTextAlignment="Center"
+                                                VerticalOptions="Center"
+                                                Text="{Binding Title}"/>
+                                        </StackLayout>
+                                    </Grid>
+                                </StackLayout>                               
                             </ViewCell>
                         </DataTemplate>
                     </controls:CustomListView.ItemTemplate>

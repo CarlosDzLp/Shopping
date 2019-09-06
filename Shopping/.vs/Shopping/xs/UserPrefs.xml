@@ -1,19 +1,11 @@
-﻿<Properties StartupConfiguration="{7E36BE8A-E8D4-4CC5-B99B-31C046E71FFA}|Default">
+﻿<Properties StartupConfiguration="{3187E2B3-7AAE-48C6-8B4B-56AE0C6751A8}|Default">
   <MonoDevelop.Ide.ItemProperties.App.ShoppingApp.Android PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
   <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Shopping" expanded="True">
-            <Node name="App" expanded="True">
-              <Node name="ShoppingApp" expanded="True">
-                <Node name="Views" expanded="True">
-                  <Node name="Principal" expanded="True">
-                    <Node name="AccountPage.xaml" selected="True" />
-                  </Node>
-                </Node>
-              </Node>
-            </Node>
+            <Node name="App" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -24,7 +16,10 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.ItemProperties.Web.Shopping PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/carlosdiaz/Shopping/Shopping/App/ShoppingApp/ShoppingApp/ViewModels/Base/BindableBase.cs" relfile="App/ShoppingApp/ShoppingApp/ViewModels/Base/BindableBase.cs" line="48" column="1" />
+      <Breakpoint file="/Users/carlosdiaz/Shopping/Shopping/.vs/Shopping/xs/UserPrefs.xml" relfile=".vs/Shopping/xs/UserPrefs.xml" line="15" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

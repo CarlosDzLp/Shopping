@@ -3,6 +3,8 @@ using System.Collections.ObjectModel;
 using Xamarin.Forms;
 using ShoppingApp.Models.Menu;
 using ShoppingApp.ViewModels.Base;
+using System.Windows.Input;
+using ShoppingApp.Views.Principal;
 
 namespace ShoppingApp.ViewModels.Principal
 {
@@ -21,10 +23,16 @@ namespace ShoppingApp.ViewModels.Principal
         public MenuPageViewModel()
         {
             LoadMenu();
+            SelectedItemMenu = new Command<MenuModel>(SelectedItemMenuExecuted);
         }
         #endregion
 
+        #region Command
+        public ICommand SelectedItemMenu { get; set; }
+        #endregion
+
         #region Method
+
         private void LoadMenu()
         {
             try
@@ -33,48 +41,84 @@ namespace ShoppingApp.ViewModels.Principal
                 ListMenu.Clear();
                 ListMenu.Add(new MenuModel
                 {
-                    Title="Inicio",
-                    Icon="",
-                    Background=Color.Accent
+                    PageID = 0,
+                    Title = "Inicio",
+                    Icon = "ic_home",
+                    TargetType = null
                 });
                 ListMenu.Add(new MenuModel
                 {
+                    PageID = 1,
                     Title = "Categorias",
-                    Icon = "",
-                    Background = Color.Accent
+                    Icon = "ic_category",
+                    TargetType = typeof(CategoryPage)
                 });
                 ListMenu.Add(new MenuModel
                 {
+                    PageID = 2,
                     Title = "Buscar",
-                    Icon = "",
-                    Background = Color.Accent
+                    Icon = "ic_search",
+                    TargetType = typeof(SearchPage)
                 });
                 ListMenu.Add(new MenuModel
                 {
+                    PageID = 3,
                     Title = "Mensajes",
-                    Icon = "",
-                    Background = Color.Accent
+                    Icon = "ic_message",
+                    TargetType = typeof(MessagePage)
                 });
                 ListMenu.Add(new MenuModel
                 {
+                    PageID = 4,
                     Title = "Perfil",
-                    Icon = "",
-                    Background = Color.Accent
+                    Icon = "ic_account",
+                    TargetType = typeof(AccountPage)
                 });
                 ListMenu.Add(new MenuModel
                 {
+                    PageID = 5,
                     Title = "Historial",
-                    Icon = "",
-                    Background = Color.Accent
+                    Icon = "ic_history",
+                    TargetType = typeof(HistoryPage)
                 });
                 ListMenu.Add(new MenuModel
                 {
+                    PageID = 6,
                     Title = "Cerrar sesion",
-                    Icon = "",
-                    Background = Color.Accent
+                    Icon = "ic_logout",
+                    TargetType = null
                 });
             }
             catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        #endregion
+
+        #region CommandExecuted
+        private void SelectedItemMenuExecuted(MenuModel menu)
+        {
+            try
+            {
+                if (menu != null)
+                {
+                    if(menu.PageID == 6)
+                    {
+                        //Cerrar sesion
+                    }
+                    else if(menu.PageID == 0)
+                    {
+                        //recargar el Home
+                    }
+                    else
+                    {
+                        NavigationAsync(menu.TargetType);
+                    } 
+                }
+            }
+            catch (Exception ex)
             {
                 throw ex;
             }

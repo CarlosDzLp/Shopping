@@ -15,6 +15,7 @@ namespace ShoppingApp.Views.Principal
         public MasterPage()
         {
             InitializeComponent();
+            App.Master = this;
         }
     }
 }

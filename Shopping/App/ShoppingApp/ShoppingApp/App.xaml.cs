@@ -7,6 +7,7 @@ namespace ShoppingApp
 {
     public partial class App : Application
     {
+        public static MasterDetailPage Master { get; set; }
         public App()
         {
             InitializeComponent();

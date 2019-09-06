@@ -85,6 +85,8 @@
     <BundleResource Include="connection.json" />
     <BundleResource Include="error.json" />
     <BundleResource Include="success.json" />
+    <Compile Include="Controls\CustomNavigationRenderer.cs" />
+    <BundleResource Include="Resources\back.png" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
