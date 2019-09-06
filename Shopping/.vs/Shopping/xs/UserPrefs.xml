@@ -5,15 +5,17 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Shopping" expanded="True">
-            <Node name="App" expanded="True" />
+            <Node name="App" expanded="True">
+              <Node name="ShoppingApp.iOS" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.App.ShoppingApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.f7859fedac03736ea0086d371566163bf67803b0" />
+  <MonoDevelop.Ide.ItemProperties.App.ShoppingApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.558ADB12-E919-46FF-BED3-807E73A886F6" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.ItemProperties.Web.Shopping PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
