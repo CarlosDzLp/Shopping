@@ -13,7 +13,7 @@
 namespace ShoppingApp.Views.Principal {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views/Principal/MessagePage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\Principal\\MessagePage.xaml")]
     public partial class MessagePage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

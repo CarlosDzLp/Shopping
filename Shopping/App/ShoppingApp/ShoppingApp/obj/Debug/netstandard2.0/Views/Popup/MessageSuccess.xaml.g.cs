@@ -13,7 +13,7 @@
 namespace ShoppingApp.Views.Popup {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views/Popup/MessageSuccess.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\Popup\\MessageSuccess.xaml")]
     public partial class MessageSuccess : global::Rg.Plugins.Popup.Pages.PopupPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
