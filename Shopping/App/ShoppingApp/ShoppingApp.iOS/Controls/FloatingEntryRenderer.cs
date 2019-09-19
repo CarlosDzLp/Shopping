@@ -21,42 +21,36 @@ namespace ShoppingApp.iOS.Controls
         protected override void OnElementChanged(ElementChangedEventArgs<FloatingEntry> e)
         {
             base.OnElementChanged(e);
-
-            // unsubscribe
-            if (e.OldElement != null)
-            {
-                Control.EditingDidBegin -= OnEditingDidBegin;
-                Control.EditingDidEnd -= OnEditingDidEnd;
-                Control.EditingChanged -= ViewOnEditingChanged;
-            }
-
-            if (e.NewElement != null)
-            {
-                var ctrl = CreateNativeControl();
-                SetNativeControl(ctrl);
-
-                if (!string.IsNullOrWhiteSpace(Element.AutomationId))
-                    SetAutomationId(Element.AutomationId);
-
-                _defaultTextColor = Control.FloatingLabelTextColor;
-
-                SetIsPassword();
-                SetText();
-                SetHintText();
-                SetTextColor();
-                SetBackgroundColor();
-                SetPlaceholderColor();
-                SetHorizontalTextAlignment();
-                SetFloatingHintEnabled();
-                SetFocusedColor();
-                SetUnfocusedColor();
-                SetReturnType();
-
-                // subscribe
-                Control.EditingDidBegin += OnEditingDidBegin;
-                Control.EditingDidEnd += OnEditingDidEnd;
-                Control.EditingChanged += ViewOnEditingChanged;
-            }
+                // unsubscribe
+                if (e.OldElement != null)
+                {
+                    //Control.EditingDidBegin -= OnEditingDidBegin;
+                    //Control.EditingDidEnd -= OnEditingDidEnd;
+                    //Control.EditingChanged -= ViewOnEditingChanged;
+                }
+                if (e.NewElement != null)
+                {
+                    var ctrl = CreateNativeControl();
+                    SetNativeControl(ctrl);
+                    if (!string.IsNullOrWhiteSpace(Element.AutomationId))
+                        SetAutomationId(Element.AutomationId);
+                    _defaultTextColor = Control.FloatingLabelTextColor;
+                    SetIsPassword();
+                    SetText();
+                    SetHintText();
+                    SetTextColor();
+                    SetBackgroundColor();
+                    SetPlaceholderColor();
+                    SetHorizontalTextAlignment();
+                    SetFloatingHintEnabled();
+                    SetFocusedColor();
+                    SetUnfocusedColor();
+                    SetReturnType();
+                    // subscribe
+                    Control.EditingDidBegin += OnEditingDidBegin;
+                    Control.EditingDidEnd += OnEditingDidEnd;
+                    Control.EditingChanged += ViewOnEditingChanged;
+                }          
         }
 
         protected override FloatLabeledTextField CreateNativeControl()
@@ -181,7 +175,6 @@ namespace ShoppingApp.iOS.Controls
             Control.FloatingLabelEnabled = Element.FloatingHintEnabled;
         }
 
-
         private CGColor GetUnderlineColorForState()
         {
             if (_hasError) return UIColor.Red.CGColor;
@@ -266,7 +259,6 @@ namespace ShoppingApp.iOS.Controls
                     break;
             }
         }
-
 
         private UIToolbar NumberpadAccessoryView()
         {

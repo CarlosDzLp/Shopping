@@ -38,7 +38,7 @@
                                     BackgroundColor="{Binding BackgroundMenu}">
                                     <Grid
                                         ColumnSpacing="0"
-                                        Padding="5"
+                                        Padding="5,10"
                                         Margin="0">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="2*"/>
@@ -46,7 +46,9 @@
                                         </Grid.ColumnDefinitions>
                                         <StackLayout
                                             Grid.Column="0"
-                                            Grid.Row="0">
+                                            Grid.Row="0"
+                                            HorizontalOptions="End"
+                                            Margin="0,0,20,0">
                                             <Image
                                                 Source="{Binding Icon}"/>
                                         </StackLayout>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:ShoppingApp.Controls"
+    xmlns:chat="clr-namespace:ShoppingApp.Controls.Chat"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="True"
+    x:Class="ShoppingApp.Views.Principal.MessageDetailPage">
+    <ContentPage.Resources>
+		<ResourceDictionary>
+			<chat:ChatDataTemplateSelector x:Key="MessageTemplateSelector"/>
+		</ResourceDictionary>
+	</ContentPage.Resources>
+    <controls:KeyboardView>
+        <controls:KeyboardView.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </controls:KeyboardView.RowDefinitions>
+        <StackLayout
+            Grid.Row="0"
+            BackgroundColor="#EFEFEF">
+            <Image
+                HorizontalOptions="End"
+                Margin="0,15,15,15"
+                x:Name="imageclose"
+                HeightRequest="20"
+                WidthRequest="20"
+                Source="close">
+            </Image>
+        </StackLayout>
+        <Grid
+            Grid.Row="1"
+            RowSpacing="0"
+            ColumnSpacing="0">
+		    <Grid.RowDefinitions>
+			    <RowDefinition Height="*" />
+			    <RowDefinition Height="Auto" />
+		    </Grid.RowDefinitions>
+		
+		    <!--Messages in Row 0 -->
+		    <controls:CustomListView
+                ios:Cell.DefaultBackgroundColor="White"
+                ios:ListView.SeparatorStyle="FullWidth"
+                ios:ListView.RowAnimationsEnabled="True"
+			    x:Name="MessagesListView" 
+			    ItemTemplate="{StaticResource MessageTemplateSelector}" 
+			    ItemsSource="{Binding Messages}" 
+			    HasUnevenRows="True" 
+			    SeparatorVisibility="None">
+
+            </controls:CustomListView>
+		
+		    <!-- Entry and Send button in Row 1 -->
+		    <StackLayout
+                Orientation="Horizontal"
+                Grid.Row="1"
+                Padding="10"
+                BackgroundColor="#EFEFEF">
+			    <Entry 
+			        HorizontalOptions="FillAndExpand" 
+				    HeightRequest="25" 
+				    Placeholder="Message" 
+				    Text="{Binding OutGoingText}"/>
+			    <Button 		   
+                    ImageSource="send"
+				    Command="{Binding SendCommand}"/>
+		    </StackLayout>
+	    </Grid>
+    </controls:KeyboardView>
+</ContentPage>

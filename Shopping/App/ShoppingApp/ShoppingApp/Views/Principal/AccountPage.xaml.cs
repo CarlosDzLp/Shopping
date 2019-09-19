@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using ShoppingApp.ViewModels.Principal;
 using Xamarin.Forms;
 
 namespace ShoppingApp.Views.Principal
@@ -10,6 +10,7 @@ namespace ShoppingApp.Views.Principal
         public AccountPage()
         {
             InitializeComponent();
+            this.BindingContext = new AccountPageViewModel();
         }
     }
 }

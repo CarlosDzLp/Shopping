@@ -3,6 +3,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:templates="clr-namespace:ShoppingApp.Views.Templates"
+    xmlns:flowList="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
     x:Class="ShoppingApp.Views.Principal.SearchPage"
     Title="Buscar">
     <ContentPage.Content>
@@ -27,7 +28,51 @@
                 </SearchBar>
                 <BoxView HeightRequest="0.5" Color="Gray" />
             </StackLayout>
-            <templates:ConnectionView/>
+            <templates:ConnectionView IsVisible="{Binding IsVisibleConnection}"/>
+            <flowList:FlowListView
+                FlowColumnCount="2"
+                FlowColumnExpand="None"
+                FlowItemTappedCommand="{Binding }"
+                FlowItemsSource="{Binding }"
+                HasUnevenRows="True"
+                IsVisible="{Binding IsVisibleList}"
+                SeparatorVisibility="None"
+                VerticalScrollBarVisibility="Never">
+                <flowList:FlowListView.FlowColumnTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Frame
+                                            Margin="5,10"
+                                            Padding="10"
+                                            BackgroundColor="White"
+                                            CornerRadius="8"
+                                            HasShadow="True">
+                                            <StackLayout>
+                                                <Image
+                                                    HeightRequest="80"
+                                                    HorizontalOptions="Center"
+                                                    Source="{Binding Path=ProductImage}"
+                                                    VerticalOptions="Center"
+                                                    WidthRequest="80" />
+                                                <Label
+                                                    HorizontalTextAlignment="Center"
+                                                    Text="{Binding CropName}"
+                                                    TextColor="Black"
+                                                    VerticalOptions="Center"
+                                                    VerticalTextAlignment="Center" />
+                                                <Label
+                                                    FontSize="10"
+                                                    HorizontalTextAlignment="Center"
+                                                    Text="{Binding CropRegisterDateCreated}"
+                                                    TextColor="Black"
+                                                    VerticalOptions="Center"
+                                                    VerticalTextAlignment="Center" />
+                                            </StackLayout>
+                            </Frame>                   
+                        </StackLayout>
+                    </DataTemplate>
+                </flowList:FlowListView.FlowColumnTemplate>                
+            </flowList:FlowListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

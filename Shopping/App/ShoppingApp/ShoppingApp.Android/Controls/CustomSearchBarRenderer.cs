@@ -31,6 +31,7 @@ namespace ShoppingApp.Droid.Controls
                 linearLayout = linearLayout.GetChildAt(1) as LinearLayout;
                 linearLayout.Background = null; //removes underline
                 AutoCompleteTextView textView = linearLayout.GetChildAt(0) as AutoCompleteTextView; //modify for text appearance customization 
+                
             }
             if (Control == null) return;
 

@@ -13,7 +13,7 @@
 namespace ShoppingApp.Views.Principal {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\Principal\\HistoryPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views/Principal/HistoryPage.xaml")]
     public partial class HistoryPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

@@ -3,7 +3,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:templates="clr-namespace:ShoppingApp.Views.Templates"
-    x:Class="ShoppingApp.Views.Principal.CategoryPage"
+    xmlns:flowList="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView" xmlns:controls="clr-namespace:ShoppingApp.Controls" x:Class="ShoppingApp.Views.Principal.CategoryPage"
     Title="Categoria">
     <ContentPage.Content>
         <StackLayout>
@@ -27,7 +27,48 @@
                 </SearchBar>
                 <BoxView HeightRequest="0.5" Color="Gray" />
             </StackLayout>
-            <templates:ConnectionView/>
+            <templates:ConnectionView IsVisible="{Binding IsVisibleConnection}"/>
+            <flowList:FlowListView
+                FlowColumnCount="2"
+                FlowColumnExpand="None"
+                IsPullToRefreshEnabled="True"
+                RefreshCommand="{Binding LoadCategoryCommand}"
+                IsRefreshing="{Binding IsBussy}"
+                FlowItemTappedCommand="{Binding SelectedItemCommand}"
+                FlowItemsSource="{Binding ListCategory}"
+                HasUnevenRows="True"
+                SeparatorVisibility="None"
+                IsVisible="{Binding IsVisibleList}"
+                VerticalScrollBarVisibility="Never">
+                <flowList:FlowListView.FlowColumnTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <controls:CanvasView
+                                            Margin="5,10"
+                                            Padding="10"
+                                            BackgroundColor="White"
+                                            CornerRadius="8"
+                                            Elevation="1"
+                                HasShadow="False">
+                                            <StackLayout>
+                                                <Image
+                                                    HeightRequest="80"
+                                                    HorizontalOptions="Center"
+                                                    Source="https://images.homedepot-static.com/productImages/3278894a-ee06-4bd0-ad92-0e45377d1336/svn/house-plants-22204-64_1000.jpg"
+                                                    VerticalOptions="Center"
+                                                    WidthRequest="80" />
+                                                <Label
+                                                    HorizontalTextAlignment="Center"
+                                                    Text="{Binding CategoryName}"
+                                                    TextColor="Black"
+                                                    VerticalOptions="Center"
+                                                    VerticalTextAlignment="Center" />
+                                            </StackLayout>
+                            </controls:CanvasView>                   
+                        </StackLayout>
+                    </DataTemplate>
+                </flowList:FlowListView.FlowColumnTemplate>                
+            </flowList:FlowListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

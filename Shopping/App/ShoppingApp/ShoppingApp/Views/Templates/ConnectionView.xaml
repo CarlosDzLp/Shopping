@@ -12,7 +12,8 @@
         HeightRequest="200"
         HorizontalOptions="FillAndExpand" />
     <Label
-        x:Name="connection"
+        Text="Revise su coneccion a internet"
+        HorizontalTextAlignment="Center"
         TextColor="OrangeRed"
         HorizontalOptions="CenterAndExpand"
         FontSize="15"/>

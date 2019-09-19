@@ -4,8 +4,202 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="ShoppingApp.Views.Principal.AccountPage"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:controls="clr-namespace:ShoppingApp.Controls"
+    xmlns:convert="clr-namespace:ShoppingApp.Converters"
     ios:NavigationPage.HideNavigationBarSeparator="True"
+    xmlns:sharedtransitions="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
+    sharedtransitions:SharedTransitionNavigationPage.BackgroundAnimation="SlideFromRight"
     Title="Cuenta">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <convert:ImageConvert x:Key="imageconvert" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
+        <ScrollView
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand"
+            VerticalScrollBarVisibility="Never">
+            <StackLayout>
+                <StackLayout
+                    HeightRequest="150">
+                    <Grid
+                        VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="Center">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <StackLayout
+                            Grid.Column="0"
+                            Grid.Row="0"
+                            VerticalOptions="Center">
+                            <controls:CanvasView
+                                CornerRadius="25"
+                                WidthRequest="50"
+                                HeightRequest="50"
+                                Elevation="2"
+                                BackgroundColor="#EDEDED">
+                                <Image
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Center"
+                                    HeightRequest="30"
+                                    WidthRequest="30"
+                                    Source="camera">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer
+                                            Command="{Binding CameraCommand}"/>
+                                    </Image.GestureRecognizers>
+                                </Image>
+                            </controls:CanvasView>                           
+                        </StackLayout>
+                        <StackLayout
+                            Grid.Column="1"
+                            Grid.Row="0">
+                            <controls:CanvasView
+                                CornerRadius="60"
+                                WidthRequest="120"
+                                HeightRequest="120"
+                                Elevation="2"
+                                BackgroundColor="#EDEDED">
+                                <Image
+                                    Source="{Binding Image,Converter={StaticResource imageconvert}}"/>
+                            </controls:CanvasView>
+                        </StackLayout>
+                        <StackLayout
+                            Grid.Column="2"
+                            Grid.Row="0"
+                            VerticalOptions="Center">
+                            <controls:CanvasView
+                                CornerRadius="25"
+                                WidthRequest="50"
+                                HeightRequest="50"
+                                Elevation="2"
+                                BackgroundColor="#EDEDED">
+                                <Image
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Center"
+                                    HeightRequest="30"
+                                    WidthRequest="30"
+                                    Source="mail"/>
+                            </controls:CanvasView>
+                        </StackLayout>
+                    </Grid>   
+                </StackLayout>
+                <StackLayout
+                    Margin="0,-6,0,0">
+                    <Grid
+                        Padding="0"
+                        Margin="0"
+                        ColumnSpacing="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button
+                            CornerRadius="0"
+                            Grid.Column="0"
+                            Padding="0"
+                            Text="Ubicacion"
+                            TextColor="Black"
+                            Margin="10,0,0,0"
+                            BorderColor="Black"
+                            BorderWidth="2"
+                            BackgroundColor="White"
+                            Command="{Binding ButtonLocatorCommand}"/>
+                        <Button
+                            Margin="0,0,10,0"
+                            CornerRadius="0"
+                            Grid.Column="1"
+                            Padding="0"
+                            Text="Datos Generales"
+                            TextColor="White"
+                            BackgroundColor="Teal"
+                            Command="{Binding ButtonDataCommand}"/>
+                    </Grid>
+                </StackLayout>
+                <StackLayout>
+                    <StackLayout
+                        IsVisible="{Binding IsVisibleLocator}">
+                        <Label
+                            Text="Locator"
+                            TextColor="black"/>
+                    </StackLayout>
+                    <StackLayout
+                        IsVisible="{Binding IsVisibleData}"
+                        Padding="10,20,10,0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Entry
+                                Grid.Column="0"
+                                Grid.Row="0"
+                                HeightRequest="40" 
+                                PlaceholderColor="Gray"
+                                Placeholder="Nombre"
+                                Text="{Binding User.UserName}"/>
+                            <Entry
+                                Grid.Column="1"
+                                Grid.Row="0"
+                                HeightRequest="40" 
+                                PlaceholderColor="Gray"
+                                Placeholder="Apellidos"
+                                Text="{Binding User.UserLastName}"/>
+                            <controls:CustomPicker
+                                Grid.Column="0"
+                                Grid.Row="1"
+                                HeightRequest="40" 
+                                TitleColor="Black"
+                                Title="Sexo"
+                                BorderColor="Black"
+                                BorderWidth="1"
+                                CornerRadius="4"
+                                Image="ic_arrow_left"
+                                />
+                            <Entry
+                                Grid.Column="1"
+                                Grid.Row="1"
+                                HeightRequest="40" 
+                                PlaceholderColor="Gray"
+                                Placeholder="Sexo"
+                                Text="{Binding User.UserSex}"/>
+                            <Entry
+                                Grid.Column="0"
+                                Grid.Row="2"
+                                HeightRequest="40" 
+                                PlaceholderColor="Gray"
+                                Placeholder="Correo"
+                                Text="{Binding User.UserEmail}"/>
+                            <Entry
+                                Grid.Column="1"
+                                Grid.Row="2"
+                                IsPassword="True"
+                               HeightRequest="40" 
+                                PlaceholderColor="Gray"
+                                Placeholder="Contraseña"
+                                Text="{Binding User.UserPassword}"/>
+                        </Grid>
+                        <Button
+                            Margin="0,0,0,0"
+                            CornerRadius="0"
+                            Padding="0"
+                            Text="Guardar"
+                            TextColor="Black"
+                            BackgroundColor="White"
+                            BorderColor="Black"
+                            BorderWidth="2"
+                            Command="{Binding SaveCommand}"/>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>         
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

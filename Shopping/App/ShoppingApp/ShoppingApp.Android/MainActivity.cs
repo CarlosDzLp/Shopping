@@ -23,6 +23,7 @@ namespace ShoppingApp.Droid
             base.OnCreate(savedInstanceState);
             CurrentActivity = this;
             Rg.Plugins.Popup.Popup.Init(this, savedInstanceState);
+            Plugin.CurrentActivity.CrossCurrentActivity.Current.Init(this, savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());

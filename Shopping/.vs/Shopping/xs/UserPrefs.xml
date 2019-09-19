@@ -1,25 +1,31 @@
 ﻿<Properties StartupConfiguration="{3187E2B3-7AAE-48C6-8B4B-56AE0C6751A8}|Default">
-  <MonoDevelop.Ide.ItemProperties.App.ShoppingApp.Android PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.App.ShoppingApp.Android PreferredExecutionTarget="Android.huawei" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="App/ShoppingApp/ShoppingApp.Android/Controls/CustomSearchBarRenderer.cs">
+    <Files>
+      <File FileName="App/ShoppingApp/ShoppingApp.Android/Controls/CustomSearchBarRenderer.cs" Line="78" Column="46" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Shopping" expanded="True">
-            <Node name="App" expanded="True" />
+            <Node name="App" expanded="True">
+              <Node name="ShoppingApp.Android" expanded="True">
+                <Node name="Controls" expanded="True">
+                  <Node name="CustomSearchBarRenderer.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.App.ShoppingApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.f7859fedac03736ea0086d371566163bf67803b0" />
+  <MonoDevelop.Ide.ItemProperties.App.ShoppingApp.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.FFD68AD6-048B-46D3-94E2-E1F695423974" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.ItemProperties.Web.Shopping PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/carlosdiaz/Shopping/Shopping/App/ShoppingApp/ShoppingApp/ViewModels/Base/BindableBase.cs" relfile="App/ShoppingApp/ShoppingApp/ViewModels/Base/BindableBase.cs" line="48" column="1" />
-      <Breakpoint file="/Users/carlosdiaz/Shopping/Shopping/.vs/Shopping/xs/UserPrefs.xml" relfile=".vs/Shopping/xs/UserPrefs.xml" line="15" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

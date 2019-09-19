@@ -3,6 +3,8 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:templates="clr-namespace:ShoppingApp.Views.Templates"
+    xmlns:controls="clr-namespace:ShoppingApp.Controls"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
     x:Class="ShoppingApp.Views.Principal.MessagePage"
     Title="Mensajes">
     <ContentPage.Content>
@@ -25,9 +27,66 @@
                             iOS="0" />
                     </SearchBar.Margin>
                 </SearchBar>
-                <BoxView HeightRequest="0.5" Color="Gray" />
             </StackLayout>
-            <templates:ConnectionView/>
+            <templates:ConnectionView IsVisible="{Binding IsVisibleConnection}"/>
+            <controls:CustomListView
+                BackgroundColor="Transparent"
+                HasUnevenRows="True"
+                Footer=""
+                ios:Cell.DefaultBackgroundColor="White"
+                ios:ListView.SeparatorStyle="FullWidth"
+                ios:ListView.RowAnimationsEnabled="True"
+                IsVisible="{Binding IsVisibleListView}"
+                IsPullToRefreshEnabled="True"
+                IsRefreshing="{Binding IsRefresh}"
+                ItemsSource="{Binding ListMessage}"
+                RefreshCommand="{Binding RefreshListCommand}"
+                SelectedItemCommand="{Binding SelectedItemList}"
+                RefreshControlColor="Black"
+                SeparatorVisibility="Default"
+                SeparatorColor="Black"
+                VerticalScrollBarVisibility="Never">
+                <controls:CustomListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid
+                                Padding="15">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <StackLayout
+                                    Grid.Column="0"
+                                    Grid.Row="0"
+                                    VerticalOptions="Center">
+                                    <Grid>
+                                        <Label
+                                            VerticalOptions="Center"
+                                            VerticalTextAlignment="Center"
+                                            HorizontalTextAlignment="Start"
+                                            Text="{Binding Company}"
+                                            TextColor="Black"/>
+                                        <controls:BadgeView
+                                            IsVisible="{Binding IsVisibleBadge}"
+                                            Text="1"
+                                            BadgeColor="Red"
+                                            VerticalOptions="Center"
+                                            HorizontalOptions="End"/>
+                                    </Grid>
+                                </StackLayout>
+                                <StackLayout
+                                    Grid.Column="1"
+                                    Grid.Row="0">
+                                    <Image
+                                        VerticalOptions="Center"
+                                        HorizontalOptions="Center"
+                                        Source="ic_arrow_right"/>
+                                </StackLayout>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </controls:CustomListView.ItemTemplate>
+            </controls:CustomListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

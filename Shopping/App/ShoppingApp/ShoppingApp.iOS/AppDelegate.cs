@@ -26,6 +26,7 @@ namespace ShoppingApp.iOS
             global::Xamarin.Forms.Forms.Init();
             Rg.Plugins.Popup.Popup.Init();
             AnimationViewRenderer.Init();
+            
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

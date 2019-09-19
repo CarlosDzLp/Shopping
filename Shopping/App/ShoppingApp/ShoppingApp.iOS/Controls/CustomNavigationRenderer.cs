@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Foundation;
+using Plugin.SharedTransitions;
 using ShoppingApp.Controls;
 using ShoppingApp.iOS.Controls;
 using ShoppingApp.Views.Principal;
 using UIKit;
 using Xamarin.Forms;
 
-[assembly: ExportRenderer(typeof(CustomNavigationPage), typeof(CustomNavigationRenderer))]
+[assembly: ExportRenderer(typeof(SharedTransitionNavigationPage), typeof(CustomNavigationRenderer))]
 namespace ShoppingApp.iOS.Controls
 {
     public class CustomNavigationRenderer : Xamarin.Forms.Platform.iOS.NavigationRenderer

@@ -7,16 +7,21 @@
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:principal="clr-namespace:ShoppingApp.Views.Principal"
+    xmlns:sharedtransitions="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
     Title="Master"
     mc:Ignorable="d">
     <MasterDetailPage.Master>
         <principal:MenuPage />
     </MasterDetailPage.Master>
     <MasterDetailPage.Detail>
-        <controls:CustomNavigationPage>
+        <sharedtransitions:SharedTransitionNavigationPage
+         
+            x:Name="NavigationMaster"
+            BarBackgroundColor="White"
+            BarTextColor="Black">
             <x:Arguments>
                 <principal:HomePage />
             </x:Arguments>
-        </controls:CustomNavigationPage>
+        </sharedtransitions:SharedTransitionNavigationPage>
     </MasterDetailPage.Detail>
 </MasterDetailPage>

@@ -16,11 +16,14 @@
                 <controls:FloatingEntry
                     ActivePlaceholderColor="Black"
                     FloatingHintEnabled="True"
-                    Placeholder="EMAIL" />
+                    Placeholder="EMAIL"
+                    Text="{Binding Email}"/>
                 <controls:FloatingEntry
                     ActivePlaceholderColor="Black"
                     FloatingHintEnabled="True"
-                    Placeholder="CONTRASEÑA" />
+                    Placeholder="CONTRASEÑA"
+                    IsPassword="True"
+                    Text="{Binding Password}"/>
                 <Label
                     Margin="0,20"
                     FontSize="15"
@@ -29,7 +32,7 @@
                     TextColor="Black" />
                 <Button
                     BackgroundColor="Black"
-                    Clicked="Button_Clicked"
+                    Command="{Binding LogIncommand}"
                     CornerRadius="0"
                     Text="Iniciar Sesion"
                     TextColor="White" />

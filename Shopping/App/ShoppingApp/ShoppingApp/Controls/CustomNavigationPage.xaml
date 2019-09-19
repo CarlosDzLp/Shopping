@@ -7,6 +7,5 @@
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     ios:NavigationPage.HideNavigationBarSeparator="true"
-    BarBackgroundColor="White"
-    BarTextColor="Black"
+    xmlns:transitions="clr-namespace: Plugin.SharedTransitions; assembly = Plugin.SharedTransitions"
     mc:Ignorable="d" />

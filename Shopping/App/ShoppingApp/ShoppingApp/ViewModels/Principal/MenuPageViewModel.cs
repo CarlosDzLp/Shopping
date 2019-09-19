@@ -107,10 +107,12 @@ namespace ShoppingApp.ViewModels.Principal
                     if(menu.PageID == 6)
                     {
                         //Cerrar sesion
+                        LogOut();
                     }
                     else if(menu.PageID == 0)
                     {
                         //recargar el Home
+                        NavigationAsync(null);
                     }
                     else
                     {
